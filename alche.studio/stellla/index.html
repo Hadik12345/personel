@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-   <head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="Astro v5.13.3" />
@@ -21,7 +21,7 @@
     </script>
     <!-- SEO Meta Tags -->
     <!-- Primary Meta Tags -->
-  
+
     <meta
       name="description"
       content="This is the official portfolio website of Hardik Singh, showcasing all achievements, awards, projects, research, and professional experience."
@@ -56,7 +56,7 @@
     <!-- Theme -->
     <meta name="theme-color" content="#000000" />
     <meta name="msapplication-TileColor" content="#000000" />
-  <link rel="stylesheet" href="../_astro/index.DnJ5xLaK.css" />
+    <link rel="stylesheet" href="../_astro/index.DnJ5xLaK.css" />
     <style>
       @charset "UTF-8";
       * {
@@ -64,6 +64,104 @@
         padding: 0;
         margin: 0;
       }
+      .alphaJavisImage {
+        width: 100%;
+        max-width: 750px;
+        border-radius: 12px;
+
+        /* Glowing neon border */
+        border: 2px solid rgba(0, 200, 255, 0.5);
+        box-shadow: 0 0 15px rgba(0, 200, 255, 0.5),
+          0 0 35px rgba(255, 0, 180, 0.3);
+
+        /* Fade-in animation */
+        opacity: 0;
+        animation: fadeIn 1.2s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .AlphaJavisTechAndCapabilities__container {
+        padding: 70px 0;
+        width: 100%;
+      }
+
+      .AlphaJavisTechAndCapabilities__title {
+        text-align: center;
+        color: #fff;
+        font-size: 28px;
+        margin-bottom: 40px;
+        letter-spacing: 0.5px;
+      }
+
+      .AlphaJavisSubTitle {
+        color: #00d4ff;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* GRID LAYOUT */
+      .AlphaJavisGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 25px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      /* CARD */
+      .AlphaJavisIconCard {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 14px;
+        border: 1px solid rgba(0, 200, 255, 0.25);
+        box-shadow: 0 0 20px rgba(0, 200, 255, 0.15);
+        padding: 18px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+
+        transition: 0.3s ease;
+      }
+
+      .AlphaJavisIconCard:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 28px rgba(0, 200, 255, 0.35);
+      }
+
+      /* ICON AREA */
+      .AlphaJavisIconWrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .AlphaJavisIconWrapper img {
+        width: 70%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      /* LABEL */
+      .AlphaJavisIconLabel {
+        margin-top: 14px;
+        color: #fff;
+        font-size: 15px;
+        opacity: 0.9;
+      }
+
       html,
       body {
         font-family: Hiragino Kaku Gothic ProN, メイリオ, sans-serif;
@@ -233,7 +331,7 @@
     </div>
     <header class="Header__container">
       <div class="Header__logo">
-        <a href="../index.html">
+        <a href="/">
           <svg
             width="120"
             height="auto"
@@ -257,13 +355,13 @@
       </div>
       <nav class="Header__nav">
         <div class="Header__nav_item" data-page="news">
-          <a href="../news/index.html"> <span>News</span> </a>
+          <a href="../news"> <span>News</span> </a>
         </div>
         <div class="Header__nav_item" data-page="works">
-          <a href="../works/index.html"> <span>Works</span> </a>
+          <a href="../works"> <span>Works</span> </a>
         </div>
         <div class="Header__nav_item" data-page="about">
-          <a href="../about/index.html"> <span>About</span> </a>
+          <a href="../about"> <span>About</span> </a>
         </div>
         <div class="Header__nav_item" data-page="stellla">
           <a href="index.html"> <span>stellla</span> </a>
@@ -271,7 +369,7 @@
       </nav>
       <div class="Header__right_controls">
         <a
-          href="../contact/index.html"
+          href="../contact"
           class="SlotButton__button Header__contact"
         >
           <span class="SlotButton__text_wrapper">
@@ -299,22 +397,22 @@
       <nav class="SideMenu__menu" data-menu>
         <div class="SideMenu__menu_inner">
           <div class="SideMenu__menu_item">
-            <a href="../index.html"> <span>Top</span> </a>
+            <a href="/"> <span>Top</span> </a>
           </div>
           <div class="SideMenu__menu_item">
-            <a href="../news/index.html"> <span>News</span> </a>
+            <a href="../news"> <span>News</span> </a>
           </div>
           <div class="SideMenu__menu_item">
-            <a href="../works/index.html"> <span>Works</span> </a>
+            <a href="../works"> <span>Works</span> </a>
           </div>
           <div class="SideMenu__menu_item">
-            <a href="../about/index.html"> <span>About</span> </a>
+            <a href="../about"> <span>About</span> </a>
           </div>
           <div class="SideMenu__menu_item">
             <a href="index.html"> <span>stellla</span> </a>
           </div>
           <div class="SideMenu__menu_item">
-            <a href="../contact/index.html"> <span>Contact / Recruit</span> </a>
+            <a href="../contact"> <span>Contact / Recruit</span> </a>
           </div>
         </div>
         <!-- ソーシャルリンク -->
@@ -380,9 +478,8 @@
                 </video>
               </div>
             </div>
-            <!-- 動画がついてくる範囲 -->
+
             <div class="PageStelllla__movieBg">
-              <!-- 動画背景 -->
               <div class="PageStelllla__movieBg_bg">
                 <div
                   class="PageStelllla__movieBg_bg_wrapper"
@@ -398,7 +495,7 @@
                   >
                     <source src="kv.mp4" type="video/mp4" />
                   </video>
-                  <!-- 暗くするためのオーバーレイ -->
+
                   <div
                     id="stellla-bg-overlay"
                     class="PageStelllla__movieBg_bg_overlay"
@@ -408,7 +505,7 @@
               <!-- KV（ロゴ） -->
               <div class="PageStelllla__kv">
                 <h2 class="PageStelllla__kv_logo" data-element="kv-logo">
-                  <img src="logo_stellla.png" alt="" />
+                  <img src="logo_jarvis.png" alt="jarvis" />
                 </h2>
                 <div class="ScrollIndicator__scroll_indicator">
                   <div class="ScrollIndicator__scroll_line">
@@ -423,23 +520,30 @@
                     lang="ja"
                     data-animation="intro-text"
                   >
-                    「stellla」は、<br />メタバース構築基盤として、ライブイベント、ファッションショー、そして工場・都市計画など産業系デジタル空間まで幅広く対応。<br />
-                    多人数同時接続・アバターカスタマイズなど基本機能を、PC /
-                    モバイル / VR向けに提供。<br />
-                    Unreal Engineのビジュアルとコスト効率を両立します。
+                    "AlphaJavis" is an agentic next-generation voice
+                    assistant,<br />
+                    built to handle everything from device control, music
+                    playback, research, and automation while understanding your
+                    context and emotions.<br />
+                    It features ambient sound awareness, intent detection, and
+                    wake-word recognition (“Javis”), supporting 25 languages
+                    across PC / mobile.<br />
+                    AlphaJavis delivers powerful actions, from simple reminders
+                    to complex tasks like purchasing products on your command.
                   </p>
                   <p
                     class="PageStelllla__intro_text"
                     lang="en"
                     data-animation="intro-text"
                   >
-                    stellla" transcends the limitations of existing platforms
-                    and allows for free expression.From UI, sound design, and
-                    the entire world to avatars, total customization is possible
-                    according to the worldview of the content. You can challenge
-                    new expressions and experiences that have been difficult to
-                    achieve on existing platforms, and take on world-first
-                    challenges.
+                    "AlphaJavis" goes beyond traditional assistants and enables
+                    rich, human-like interaction. From emotional awareness,
+                    ambient listening, and intelligent intent recognition to
+                    full device control, every element is designed to feel
+                    natural. You can automate tasks, generate summaries, search
+                    deeply, or issue complex multi-step commands—all handled
+                    smoothly by AlphaJavis, bringing new possibilities to
+                    voice-based experiences.
                   </p>
                 </div>
               </div>
@@ -462,7 +566,7 @@
                         data-element="point-image"
                       >
                         <img
-                          src="points/01.webp"
+                          src="points/01.png"
                           alt=""
                           data-animation="img-scale"
                         />
@@ -473,21 +577,23 @@
                       >
                         <div>
                           <h3 class="PageStelllaPoint__item_title" lang="ja">
-                            新しいデジタルエンターテインメント空間を創造
+                            Advanced Emotional & Environmental Awareness
                           </h3>
                           <h3 class="PageStelllaPoint__item_title" lang="en">
-                            Create a new digital entertainment space
+                            Create a new digital space
                           </h3>
                           <p class="PageStelllaPoint__item_text" lang="ja">
-                            stelllaは、アーティスト、ブランド、IPなどが自身がもつ世界観を、没入型デジタル体験として構築するための開発基盤です。空間的な制約を超え、世界中のファンが同時に参加できるエンターテインメント体験を提供します。<br />
+                            AlphaJavis understands emotional tone and ambient
+                            sound in real time. It listens intelligently to your
+                            surroundings, adapts to your mood, and delivers
+                            responses that feel natural and human-like.<br />
                           </p>
                           <p class="PageStelllaPoint__item_text" lang="en">
-                            Create a new digital entertainment spacestellla is a
-                            development platform for artists, brands, IPs, etc.
-                            to build their own worldviews as immersive digital
-                            experiences.It provides an entertainment experience
-                            that transcends spatial constraints and allows fans
-                            around the world to participate simultaneously.<br />
+                            AlphaJavis uses emotional understanding and ambient
+                            sound detection to create a deeply adaptive voice
+                            experience. It senses how you feel, reacts
+                            accordingly, and becomes more intuitive over
+                            time.<br />
                           </p>
                         </div>
                       </div>
@@ -509,7 +615,7 @@
                         data-element="point-image"
                       >
                         <img
-                          src="points/02.webp"
+                          src="points/02.png"
                           alt=""
                           data-animation="img-scale"
                         />
@@ -520,22 +626,22 @@
                       >
                         <div>
                           <h3 class="PageStelllaPoint__item_title" lang="ja">
-                            プラットフォームの枠を超えた<br
-                              data-media="min-md"
-                            />表現の自由
+                            Precise Wake-Word & Intent Recognition
                           </h3>
                           <h3 class="PageStelllaPoint__item_title" lang="en">
                             Freedom of expression
                           </h3>
                           <p class="PageStelllaPoint__item_text" lang="ja">
-                            既存プラットフォームの制約にとらわれず、コンテンツの世界観に合わせた完全カスタマイズが可能です。アプリアイコン、UI、サウンド、空間デザイン、アバターまで、すべてが統一された世界観で表現できます。<br />
+                            AlphaJavis instantly responds to wake-words like
+                            “Javis” and understands the intention behind your
+                            requests. It listens more like a human by decoding
+                            context, goals, and meaning—not just commands.<br />
                           </p>
                           <p class="PageStelllaPoint__item_text" lang="en">
-                            Beyond platform boundariesFully customizable to
-                            match the worldview of your content without the
-                            constraints of existing platforms. Everything from
-                            application icons, UI, sound, spatial design, and
-                            avatars can be expressed in a unified worldview..<br />
+                            With powerful intent recognition and fast wake-word
+                            detection, AlphaJavis understands what you mean, not
+                            just what you say. It reacts quickly and smartly,
+                            making interactions smooth and natural.<br />
                           </p>
                         </div>
                       </div>
@@ -557,7 +663,7 @@
                         data-element="point-image"
                       >
                         <img
-                          src="points/03.webp"
+                          src="points/03.png"
                           alt=""
                           data-animation="img-scale"
                         />
@@ -568,21 +674,23 @@
                       >
                         <div>
                           <h3 class="PageStelllaPoint__item_title" lang="ja">
-                            技術と表現力の融合
+                            Powerful Agentic Automation
                           </h3>
                           <h3 class="PageStelllaPoint__item_title" lang="en">
                             Fusion of Technology and Expression
                           </h3>
                           <p class="PageStelllaPoint__item_text" lang="ja">
-                            当社Alcheは、エンジニアリングからビジュアル制作までを一貫して手がけることで、技術的な実現性と創造的な表現力を両立。3Dモデリング、空間デザイン、UI、ライブ演出、エフェクトなど、多岐にわたり、感動的で記憶に残るデジタル体験を創出します。<br />
+                            AlphaJavis performs both simple and multi-step
+                            complex tasks—setting reminders, managing apps,
+                            searching the web, generating summaries, and even
+                            executing actions like purchasing items—all on your
+                            behalf.<br />
                           </p>
                           <p class="PageStelllaPoint__item_text" lang="en">
-                            Alche consistently handles everything from
-                            engineering to visual production, achieving both
-                            technical feasibility and creative expression. We
-                            utilize diverse expertise in 3D modeling, spatial
-                            design, live production, effects, and more to create
-                            moving and memorable digital experiences.<br />
+                            AlphaJavis goes beyond basic commands with true
+                            agentic abilities. It can automate workflows, manage
+                            apps, complete requests, and carry out complex tasks
+                            end-to-end, acting like a real digital assistant.<br />
                           </p>
                         </div>
                       </div>
@@ -597,11 +705,11 @@
                 <h3 class="PageStelllaFunctionAndFeature__title">
                   function / feature
                 </h3>
-                <p class="PageStelllaFunctionAndFeature__jaTitle">
-                  主な特徴と機能
-                </p>
+                <p class="PageStelllaFunctionAndFeature__jaTitle"></p>
               </div>
+
               <div class="PageStelllaFunctionAndFeature__list">
+                <!-- 01 Emotional Awareness -->
                 <article
                   class="PageStelllaFunctionAndFeature__item"
                   data-feature_type="ue"
@@ -632,18 +740,24 @@
                       </div>
                     </div>
                   </figure>
+
                   <div
                     class="PageStelllaFunctionAndFeature__item_detail"
                     data-element="feature-detail"
                   >
                     <h4 class="PageStelllaFunctionAndFeature__item_title">
-                      Unreal Engine用 Plugin
+                      Emotional Awareness & Ambient Listening
                     </h4>
                     <div class="PageStelllaFunctionAndFeature__item_text">
-                      <p>Unreal Engineの表現力・機能と両立</p>
+                      <p>
+                        AlphaJavis senses emotional tone and surrounding sound,
+                        enabling natural, human-like responses.
+                      </p>
                     </div>
                   </div>
                 </article>
+
+                <!-- 02 Wake-word + Intent -->
                 <article
                   class="PageStelllaFunctionAndFeature__item"
                   data-feature_type="fortnite"
@@ -674,22 +788,24 @@
                       </div>
                     </div>
                   </figure>
+
                   <div
                     class="PageStelllaFunctionAndFeature__item_detail"
                     data-element="feature-detail"
                   >
                     <h4 class="PageStelllaFunctionAndFeature__item_title">
-                      フォートナイトとの連携
+                      Wake-Word Activation & Intent Recognition
                     </h4>
                     <div class="PageStelllaFunctionAndFeature__item_text">
                       <p>
-                        UEベースのコンテンツ制作のため複数のアセットが、<br
-                          data-media="max-md"
-                        />フォートナイトでも利用可能
+                        Instantly responds to “Javis” and understands user
+                        intent, not just commands.<br data-media="max-md" />
                       </p>
                     </div>
                   </div>
                 </article>
+
+                <!-- 03 Multilingual + Multi-device -->
                 <article
                   class="PageStelllaFunctionAndFeature__item"
                   data-feature_type="multiplay"
@@ -714,32 +830,37 @@
                       <div class="PageStelllaFunctionAndFeature__item_icons">
                         <img
                           src="function/icons/multiplayer/00.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/multiplayer/01.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/multiplayer/02.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
                         />
                       </div>
                     </div>
                   </figure>
+
                   <div
                     class="PageStelllaFunctionAndFeature__item_detail"
                     data-element="feature-detail"
                   >
                     <h4 class="PageStelllaFunctionAndFeature__item_title">
-                      マルチプレイ対応
+                      25-Language Support & Multi-Device Listening
                     </h4>
                     <div class="PageStelllaFunctionAndFeature__item_text">
-                      <p>離れている人や友達と一緒に体験できる</p>
+                      <p>
+                        Works seamlessly across devices and languages, allowing
+                        everyone to interact naturally.
+                      </p>
                     </div>
                   </div>
                 </article>
+
+                <!-- 04 Agentic Automation -->
                 <article
                   class="PageStelllaFunctionAndFeature__item"
                   data-feature_type="money"
@@ -764,36 +885,41 @@
                       <div class="PageStelllaFunctionAndFeature__item_icons">
                         <img
                           src="function/icons/money/00.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/money/01.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/money/02.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/money/03.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
                         />
                       </div>
                     </div>
                   </figure>
+
                   <div
                     class="PageStelllaFunctionAndFeature__item_detail"
                     data-element="feature-detail"
                   >
                     <h4 class="PageStelllaFunctionAndFeature__item_title">
-                      収益化機能
+                      Advanced Agentic Automation
                     </h4>
                     <div class="PageStelllaFunctionAndFeature__item_text">
-                      <p>チケット販売、デジタルグッズ販売、決済に対応</p>
+                      <p>
+                        Completes multi-step tasks like reminders, research,
+                        purchases, and workflow automation.
+                      </p>
                     </div>
                   </div>
                 </article>
+
+                <!-- 05 Customization -->
                 <article
                   class="PageStelllaFunctionAndFeature__item"
                   data-feature_type="customize"
@@ -818,40 +944,42 @@
                       <div class="PageStelllaFunctionAndFeature__item_icons">
                         <img
                           src="function/icons/customize/00.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/customize/01.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/customize/02.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/customize/03.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
                         />
                       </div>
                     </div>
                   </figure>
+
                   <div
                     class="PageStelllaFunctionAndFeature__item_detail"
                     data-element="feature-detail"
                   >
                     <h4 class="PageStelllaFunctionAndFeature__item_title">
-                      カスタマイズ性
+                      Voice, Personality & Skill Customization
                     </h4>
                     <div class="PageStelllaFunctionAndFeature__item_text">
                       <p>
-                        オリジナルアバター、モーション、<br
+                        Customize voice tone, personality style, behaviors,<br
                           data-media="max-md"
-                        />空間設計など自由なカスタマイズ
+                        />and advanced skill modules.
                       </p>
                     </div>
                   </div>
                 </article>
+
+                <!-- 06 Multi-platform Integration -->
                 <article
                   class="PageStelllaFunctionAndFeature__item"
                   data-feature_type="web"
@@ -876,134 +1004,194 @@
                       <div class="PageStelllaFunctionAndFeature__item_icons">
                         <img
                           src="function/icons/web/00.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/web/01.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/web/02.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
-                        /><img
+                        />
+                        <img
                           src="function/icons/web/03.png"
-                          alt=""
                           class="PageStelllaFunctionAndFeature__item_icon"
                         />
                       </div>
                     </div>
                   </figure>
+
                   <div
                     class="PageStelllaFunctionAndFeature__item_detail"
                     data-element="feature-detail"
                   >
                     <h4 class="PageStelllaFunctionAndFeature__item_title">
-                      マルチプラットフォーム
+                      Multi-Platform Integration
                     </h4>
                     <div class="PageStelllaFunctionAndFeature__item_text">
                       <p>
-                        Web、モバイル、PC、VRまで、あらゆるデバイスに最適化された体験を構築
+                        Optimized for Web, mobile, PC, and IoT—seamlessly
+                        connected across every device.
                       </p>
                     </div>
                   </div>
                 </article>
               </div>
+
               <div
                 class="PageStelllaFunctionAndFeature__slide_container"
                 data-animation="slide-container"
               >
-                <div>
-                  <iframe
-                    class="speakerdeck-iframe"
-                    frameborder="0"
-                    src="https://speakerdeck.com/player/818f2ce6225144deb95fc599f4aae841"
-                    title="Unreal Sapporo Night vol.2"
-                    allowfullscreen="true"
-                    style="
-                      border: 0px;
-                      background: padding-box padding-box rgba(0, 0, 0, 0.1);
-                      margin: 0px;
-                      padding: 0px;
-                      border-radius: 6px;
-                      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px;
-                      width: 100%;
-                      height: auto;
-                      aspect-ratio: 560 / 315;
-                    "
-                    data-ratio="1.7777777777777777"
-                  ></iframe>
+                <div
+                  style="
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 0;
+                  "
+                >
+                  <img
+                    src="points/MIC.jpeg"
+                    alt="AlphaJavis Visual"
+                    class="alphaJavisImage"
+                  />
                 </div>
                 <h4 class="PageStelllaFunctionAndFeature__slide_title">
-                  プラグインによる効率的なエンジン拡張<br />
-                  - stelllaで実現するメタバース開発 -
+                  Where Your Voice Becomes Action <br />
+                  – Powered by AlphaJavis –
                 </h4>
               </div>
             </div>
-            <!-- 導入企業 -->
-            <div class="PageStelllaUseCompany__container">
-              <div class="PageStelllaUseCompany__inner">
-                <h3 class="PageStelllaUseCompany__title">導入企業</h3>
-                <ul class="PageStelllaUseCompany__list">
-                  <li class="PageStelllaUseCompany__item">
-                    <div class="PageStelllaUseCompany__item_inner">
-                      <figure
-                        class="PageStelllaUseCompany__item_logo"
-                        data-animation="company-logo"
-                      >
-                        <img
-                          src="company/1.png"
-                          alt="丸紅株式会社"
-                          data-animation="img-scale"
-                        />
-                      </figure>
-                    </div>
-                  </li>
-                  <li class="PageStelllaUseCompany__item">
-                    <div class="PageStelllaUseCompany__item_inner">
-                      <figure
-                        class="PageStelllaUseCompany__item_logo"
-                        data-animation="company-logo"
-                      >
-                        <img
-                          src="company/2.png"
-                          alt="株式会社荏原製作所"
-                          data-animation="img-scale"
-                        />
-                      </figure>
-                    </div>
-                  </li>
-                  <li class="PageStelllaUseCompany__item">
-                    <div class="PageStelllaUseCompany__item_inner">
-                      <figure
-                        class="PageStelllaUseCompany__item_logo"
-                        data-animation="company-logo"
-                      >
-                        <img
-                          src="company/3.png"
-                          alt="株式会社東芝"
-                          data-animation="img-scale"
-                        />
-                      </figure>
-                    </div>
-                  </li>
-                  <li class="PageStelllaUseCompany__item">
-                    <div class="PageStelllaUseCompany__item_inner">
-                      <figure
-                        class="PageStelllaUseCompany__item_logo"
-                        data-animation="company-logo"
-                      >
-                        <img
-                          src="company/4.png"
-                          alt="株式会社NTTドコモ"
-                          data-animation="img-scale"
-                        />
-                      </figure>
-                    </div>
-                  </li>
-                </ul>
+            <!-- tools -->
+            <div class="AlphaJavisTechAndCapabilities__container">
+              <div class="AlphaJavisTechAndCapabilities__inner">
+                <!-- SECTION TITLE -->
+                <h3 class="AlphaJavisTechAndCapabilities__title">
+                  Powered By · What Makes AlphaJavis Intelligent
+                </h3>
+
+                <!-- PART A: TECHNOLOGIES -->
+                <div class="AlphaJavisTools__block">
+                  <h4 class="AlphaJavisSubTitle">
+                    Core Technologies & Frameworks
+                  </h4>
+
+                  <ul class="AlphaJavisGrid">
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="tools/deep.png" alt="Deepgram" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">
+                        Deepgram – Speech Recognition
+                      </p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="tools/gem.png" alt="Gemini" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">
+                        Gemini – LLM Intelligence
+                      </p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="tools/el.png" alt="ElevenLabs" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">
+                        ElevenLabs – Voice Synthesis
+                      </p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="tools/grok.png" alt="Grok" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">Grok – Reasoning Engine</p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="tools/sup.png" alt="Supabase" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">
+                        Supabase – Realtime Database
+                      </p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="tools/lang.png" alt="LangChain" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">
+                        LangChain – Agent Workflow
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- PART B: CAPABILITIES -->
+                <div class="AlphaJavisCapabilities__block">
+                  <h4 class="AlphaJavisSubTitle">
+                    Core Capabilities of AlphaJavis
+                  </h4>
+
+                  <ul class="AlphaJavisGrid">
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="capabilities/emotion.png" alt="" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">Emotional Awareness</p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="capabilities/wake.png" alt="" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">
+                        Wake-word Activation (Javis)
+                      </p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="capabilities/lang.png" alt="" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">
+                        25-Language Understanding
+                      </p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="capabilities/automation.png" alt="" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">Agentic Automation</p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="capabilities/control.png" alt="" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">Cross-Device Control</p>
+                    </li>
+
+                    <li class="AlphaJavisIconCard">
+                      <div class="AlphaJavisIconWrapper">
+                        <img src="capabilities/constant.png" alt="" />
+                      </div>
+                      <p class="AlphaJavisIconLabel">
+                        Ambient Context Listening
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+
             <!-- stellla導入事例 -->
             <div
               class="PageStelllaCaseStudy__container"
@@ -1032,7 +1220,7 @@
                       data-casestudy-article
                     >
                       <a
-                        href="../works/detail/8ekyy7vviu/index.html"
+                        href="../works/detail/8ekyy7vviu"
                         class="PageStelllaCaseStudy__item_btn"
                         data-element="case-btn"
                       >
@@ -1067,7 +1255,7 @@
                       data-casestudy-article
                     >
                       <a
-                        href="../works/detail/uqdzssjeiox/index.html"
+                        href="../works/detail/uqdzssjeiox"
                         class="PageStelllaCaseStudy__item_btn"
                         data-element="case-btn"
                       >
@@ -1102,7 +1290,7 @@
                       data-casestudy-article
                     >
                       <a
-                        href="../works/detail/6quknisr3zu/index.html"
+                        href="../works/detail/6quknisr3zu"
                         class="PageStelllaCaseStudy__item_btn"
                         data-element="case-btn"
                       >
@@ -1138,20 +1326,21 @@
             <div class="PageStelllaContact__container" data-stellla-contact>
               <div class="PageStelllaContact__content">
                 <p class="PageStelllaContact__lead" data-element="contact-lead">
-                  課題やビジョン、世界観に寄り添い、<br
-                    data-media="min-md"
-                  />最適な表現、解決策をご提案します。
+                  Let's build the future of intelligent voice interaction
+                  together.<br data-media="min-md" />
+                  Share your vision — we’ll help bring it to life.
                 </p>
                 <p class="PageStelllaContact__text" data-element="contact-text">
-                  Alcheは、エンジニアリングとクリエイティブの両軸から空間体験を構築可能です。<br
-                    data-media="max-md"
-                  />
-                  アーティスト、デザイナー、エンジニアが一体となり、より良い体験、ビジュアルを追求しながら、<br
-                    data-media="max-md"
-                  />コンセプトを最大限に引き出します。
+                  With deep expertise across voice AI, real-time systems, and
+                  intelligent automation,<br data-media="max-md" />
+                  we help creators, developers, and teams craft powerful,
+                  human-like experiences.<br data-media="max-md" />
+                  Whether you're exploring integrations, partnerships, or custom
+                  solutions,<br data-media="max-md" />
+                  we’re here to support your journey with AlphaJavis.
                 </p>
                 <a
-                  href="../contact/index.html"
+                  href="../contact"
                   class="SlotButton__button PageStelllaContact__stellla_button"
                 >
                   <span class="SlotButton__text_wrapper">
@@ -1163,39 +1352,7 @@
             </div>
           </div>
           <!-- YouTube Modal -->
-          <div class="YoutubeModal__overlay" id="youtube-modal-overlay">
-            <div class="YoutubeModal__modal">
-              <button class="YoutubeModal__close" id="youtube-modal-close">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18 6L6 18"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M6 6L18 18"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </button>
-              <div class="YoutubeModal__content">
-                <div class="YoutubeModal__video" id="youtube-modal-video">
-                  <!-- YouTube iframe will be inserted here -->
-                </div>
-              </div>
-            </div>
-          </div>
+
           <!-- YouTube Modal - スクリプトはPageStelllaクラスで制御 -->
         </main>
       </div>
@@ -1227,18 +1384,18 @@
         <div class="Footer__top">
           <div class="Footer__top_links">
             <div class="Footer__column">
-              <a class="Footer__pageLink" href="../index.html" data-scramble
+              <a class="Footer__pageLink" href="/" data-scramble
                 >Top</a
               >
               <a
                 class="Footer__pageLink"
-                href="../news/index.html"
+                href="../news"
                 data-scramble
                 >News</a
               >
               <a
                 class="Footer__pageLink"
-                href="../works/index.html"
+                href="../works"
                 data-scramble
                 >Works</a
               >
@@ -1246,7 +1403,7 @@
             <div class="Footer__column">
               <a
                 class="Footer__pageLink"
-                href="../about/index.html"
+                href="../about"
                 data-scramble
                 >About</a
               >
@@ -1255,7 +1412,7 @@
               >
               <a
                 class="Footer__pageLink"
-                href="../contact/index.html"
+                href="../contact"
                 data-scramble
                 >Contact</a
               >
@@ -1390,20 +1547,20 @@
                 class="Footer__privacyLicense_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="../privacypolicy/index.html"
+                href="../privacypolicy"
                 data-scramble
                 >Privacy Policy</a
               >
               <a
                 class="Footer__privacyLicense_link"
-                href="../license/index.html"
+                href="../license"
                 data-scramble
                 >License</a
               >
             </div>
           </div>
         </div>
-        <div class="Footer__copyright">©2025 Alche, inc.</div>
+        <div class="Footer__copyright">©2025 Hardik Singh.</div>
         <div class="Footer__logo">
           <img src="../common/alche_logo.svg" alt="ALCHE" />
         </div>
